@@ -1,0 +1,1727 @@
+/* General Body Style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Elite Header */
+.elite-header {
+    background: linear-gradient(to right, #f4e6e6, #fff);
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.elite-logo {
+    width: 90px;
+    height: auto;
+}
+
+.elite-text {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.elite-title {
+    color: black;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.elite-subtitle {
+    font-size: 0.8rem;
+    color: gray;
+    line-height: 1;
+}
+
+/* Section Styling */
+.container-fluid {
+    background: linear-gradient(to right, #e2c1b8, #fff 50%, #e2c1b8);
+    position: relative;
+    padding: 50px 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Circle background positioned in the bottom-left */
+.circle-backgrounds {
+    position: absolute;
+    bottom: -50px; /* Align with the bottom of the section */
+    left: -90px; /* Align with the left side */
+    width: 400px; /* Adjust the size as necessary */
+    height: 400px;
+    background-color: #D4787836; /* Adjust background color */
+    border-radius: 50%;
+    z-index: -1; /* Place it behind the content */
+}
+@media (max-width: 576px) {
+    .circle-backgrounds {
+        display: none; /* Hide the circle on screens smaller than 576px */
+    }
+}
+.circle-backgrounde {
+    position: absolute;
+    top: -50px; /* Adjust to move the circle down or up */
+    right: -50px; /* Align it to the right side */
+    width: 400px; /* Adjust the size as necessary */
+    height: 400px;
+    background-color: #D4787836; /* Light pink background */
+    border-radius: 50%;
+    z-index: -1; /* Place it behind the content */
+}
+
+/* Hide the circle in mobile view */
+@media (max-width: 576px) {
+    .circle-backgrounde {
+        display: none; /* Hide the circle on screens smaller than 576px */
+    }
+}
+
+.insigna-title {
+    color: #CD1310;
+    font-family: Poppins;
+    font-size: 8vw; /* Responsive font size */
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.location {
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #CD1310;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.sample-btn {
+    background-color: #CD1310;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.5vw; /* Responsive font size */
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 1.5vw; /* Responsive font size */
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .insigna-title {
+        font-size: 10vw;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .location {
+        font-size: 3.5vw;
+        margin-left: 20px;
+    }
+    .sample-btn {
+        font-size: 3vw;
+        margin-right: 100px;
+    }
+    .subtitle {
+        font-size: 3vw;
+        margin-left: 20px;
+    }
+}
+
+/* For small screens (phones) */
+@media (max-width: 576px) {
+    .insigna-title {
+        font-size: 12vw;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .location {
+        font-size: 4vw;
+        margin-left: 10px;
+    }
+    .sample-btn {
+        font-size: 4vw;
+        padding: 8px 15px;
+        margin-right: 50px;
+    }
+    .subtitle {
+        font-size: 4vw;
+        margin-left: 10px;
+    }
+}
+
+/* Extra Small Screens (very small devices) */
+@media (max-width: 400px) {
+    .insigna-title {
+        font-size: 14vw;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .location {
+        font-size: 4.5vw;
+        margin-left: 5px;
+    }
+    .sample-btn {
+        font-size: 4.5vw;
+        padding: 5px 10px;
+        margin-right: 20px;
+    }
+    .subtitle {
+        font-size: 4.5vw;
+        margin-left: 5px;
+    }
+}
+.container-fluid {
+    background: linear-gradient(to right, #e2c1b8, #fff 50%, #e2c1b8);
+    position: relative;
+    padding: 50px 0;
+    overflow: visible;
+}
+
+/* Circle background positioned in the bottom-left */
+.circle-background {
+    position: absolute;
+    bottom: -50px; /* Adjust as needed to position circle at the bottom */
+    left: -50px; /* Adjust to move the circle to the left side */
+    width: 400px;
+    height: 400px;
+    background-color: #D4787836;
+    border-radius: 50%;
+    z-index: -1; /* Ensure the circle is behind the content */
+}
+
+.insigna-title {
+    color: #CD1310;
+    font-family: Poppins;
+    font-size: 8vw; /* Responsive font size */
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.location {
+    font-weight: 300;
+    line-height: 1.3;
+    text-align: left;
+    margin-bottom: 20px;
+    color: #CD1310;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.sample-btn {
+    background-color: #CD1310;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1.5vw; /* Responsive font size */
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 1.5vw; /* Responsive font size */
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .insigna-title {
+        font-size: 10vw;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .location {
+        font-size: 3.5vw;
+        margin-left: 20px;
+    }
+    .sample-btn {
+        font-size: 3vw;
+        margin-right: 100px;
+    }
+    .subtitle {
+        font-size: 3vw;
+        margin-left: 20px;
+    }
+}
+
+/* For small screens (phones) */
+@media (max-width: 576px) {
+    .insigna-title {
+        font-size: 12vw;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .location {
+        font-size: 4vw;
+        margin-left: 10px;
+    }
+    .sample-btn {
+        font-size: 4vw;
+        padding: 8px 15px;
+        margin-right: 50px;
+    }
+    .subtitle {
+        font-size: 4vw;
+        margin-left: 10px;
+    }
+}
+
+/* Extra Small Screens (very small devices) */
+@media (max-width: 400px) {
+    .insigna-title {
+        font-size: 14vw;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .location {
+        font-size: 4.5vw;
+        margin-left: 5px;
+    }
+    .sample-btn {
+        font-size: 4.5vw;
+        padding: 5px 10px;
+        margin-right: 20px;
+    }
+    .subtitle {
+        font-size: 4.5vw;
+        margin-left: 5px;
+    }
+}
+
+
+/* Image Section */
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vw; /* Make the container height responsive */
+    max-height: 350px; /* Set a max height for larger screens */
+    overflow: hidden;
+  }
+
+  .circle {
+    width: 50vw; /* Responsive width */
+    height: 50vw; /* Responsive height */
+    max-width: 350px; /* Max dimensions for larger screens */
+    max-height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Left Circle with Half Clip Path */
+  .left-circle {
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+    transform: translateX(39.9%); /* Adjust to close the gap */
+  }
+
+  /* Right Circle with Half Clip Path */
+  .right-circle {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+    transform: translateX(-10%); /* Adjust to close the gap */
+  }
+
+  .left-circle img,
+  .right-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Media Query for Smaller Screens */
+  @media (max-width: 600px) {
+    .containers {
+      height: 200px;
+      width: 350px; /* Set a fixed height for small screens */
+    }
+    .circle {
+      width: 200px;
+      height: 200px;
+    }
+    .left-circle {
+      transform: translateX(19%);
+    }
+    .right-circle {
+      transform: translateX(-29%);
+    }
+  }
+
+
+/* Discount Badge */
+.discount-badge {
+    position: fixed; /* Changed from absolute to fixed */
+    top: 20px; /* Adjust based on your layout */
+    right: 30px; /* Keeps the badge at the top-right of the screen */
+    background-color: #ff5252;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 9999; /* Ensures it stays on top of other elements */
+}
+
+/* Contact Icons */
+.contact-icons {
+    position: fixed; /* Changed from absolute to fixed */
+    bottom: 40px; /* Keeps the icons at the bottom-right of the screen */
+    right: 10px; /* Aligns it to the right */
+    display: flex;
+    flex-direction: column;
+    z-index: 9999; /* Ensures it stays on top of other elements */
+}
+
+.contact-icons i {
+    color: #2e7d32;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .insigna-title {
+        font-size: 8vw;
+    }
+
+    .location {
+        font-size: 3vw;
+        margin-left: 20px;
+    }
+
+    .sample-btn {
+        font-size: 2.5vw;
+        margin-right: 100px;
+    }
+
+    .subtitle {
+        font-size: 2vw;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .insigna-title {
+        font-size: 10vw;
+       
+    }
+
+    .location {
+        font-size: 4vw;
+        margin-left: 0;
+        text-align: cente
+    }
+}
+
+
+/* General styling for headings and paragraphs */
+.legacy-heading {
+    font-size: 2rem;
+    color: #CD1310; /* Red color */
+    text-align: center; /* Center the heading */
+}
+
+.legacy-paragraph {
+    font-size: 1rem;
+    color: #555; /* Darker color for paragraphs */
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center; /* Center the paragraph text */
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.image-row img {
+    max-width: 100%; /* Ensures images scale properly */
+    height: auto;
+  }
+
+  .image-row {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+/* Responsive Adjustments for up to 768px */
+@media (max-width: 768px) {
+    .legacy-heading {
+        font-size: 1.5rem;
+    }
+
+    .legacy-paragraph {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+}
+
+/* Responsive Adjustments for up to 576px (mobile screens) */
+@media (max-width: 576px) {
+    .legacy-heading {
+        font-size: 1.2rem;
+    }
+
+    .legacy-paragraph {
+        font-size: 0.8rem;
+    }
+  
+}
+
+.heading-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Styles for the top heading */
+  .small-heading {
+    color: #d12424;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  /* Styles for the bottom heading */
+  .large-heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  /* Circle container for the icon */
+  .circle-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4e6e6;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -30px; /* Overlap the circle with the heading */
+    z-index: -1; /* Places the circle behind the text */
+  }
+
+  /* Style for the arrow icon */
+  .circle-icons i {
+    color: #d12424;
+    font-size: 34px;
+    
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .small-heading {
+      font-size: 1rem;
+    }
+    .large-heading {
+      font-size: 3rem;
+    }
+    .circle-icons {
+      width: 40px;
+      height: 40px;
+    }
+    .circle-icon .icon {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .small-heading {
+      font-size: 1rem;
+    }
+    .large-heading {
+      font-size: 2.5rem;
+    }
+    .circle-icons {
+      width: 50px;
+      height: 50px;
+      margin-left: -20px;
+    }
+    .circle-icon .icon {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .heading-section {
+      gap: 5px; /* Reduce gap between elements */
+      flex-direction: row; /* Ensure single-line layout */
+    }
+    
+    .small-heading {
+      font-size: 0.8rem;
+    }
+  
+    .large-heading {
+      font-size: 1.5rem;
+    }
+  
+    .circle-icon {
+      width: 35px;
+      height: 35px;
+      right: -10px; /* Adjust for responsive overlap */
+      top: 3px;
+    }
+    
+    .circle-icon .icon {
+      font-size: 0.9rem;
+    }
+  }
+
+/* Property Logo */
+ /* Property Logo */
+ .property-logo {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  /* Icon Box Styling */
+  .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  /* General styling for square bordered icons/images */
+  .icon-square {
+    padding: 15px;
+    border: 2px solid #DC6B69;
+    border-radius: 10px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .icon-square img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-square:hover {
+    border-color: #e56363;
+  }
+
+  .icon-box p {
+    margin-top: 5px;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  /* Button Styling */
+  .btn-danger {
+    background-color: #CD1310;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+  }
+
+  .btn-danger i {
+    margin-left: 5px;
+  }
+
+  /* Circle background - TOP LEFT */
+  .circle-top-left {
+    position: absolute;
+    top: -50px;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    background-color: #D4787836;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  /* Circle background - BOTTOM RIGHT */
+  .circle-bottom-right {
+    position: absolute;
+    bottom: -360px;
+    right: -150px;
+    width: 450px;
+    height: 450px;
+    background-color: #D4787836;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  /* Circle background - LEFT (for the 3rd section) */
+  .circle-left {
+    position: absolute;
+    left: -150px;
+    bottom: -30px;
+    width: 400px;
+    height: 400px;
+    background-color: #D4787836;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .property-logo {
+      width: 120px;
+      margin-top: 15px;
+    }
+
+    .icon-box {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .icon-square {
+      width: 70px;
+      height: 70px;
+      padding: 10px;
+    }
+
+    .icon-square img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .icon-box p {
+      font-size: 0.75rem;
+    }
+
+    /* Adjust the circles' size and position on smaller screens */
+    .circle-top-left,
+    .circle-bottom-right,
+    .circle-left {
+      width: 300px;
+      height: 300px;
+    }
+
+    .circle-top-left {
+      top: -100px;
+      left: -100px;
+    }
+
+    .circle-bottom-right {
+      bottom: -100px;
+      right: -100px;
+    }
+
+    .circle-left {
+      left: -100px;
+      bottom: -100px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .icon-square {
+      width: 60px;
+      height: 60px;
+      padding: 8px;
+    }
+
+    .icon-box p {
+      font-size: 0.7rem;
+    }
+
+    /* Further adjust the circles' size and position on very small screens */
+    .circle-top-left,
+    .circle-bottom-right,
+    .circle-left {
+      width: 300px;
+      height: 300px;
+    }
+
+    .circle-top-left {
+      top: -80px;
+      left: -50px;
+    }
+
+    .circle-bottom-right {
+      bottom: -80px;
+      right: -50px;
+    }
+
+    .circle-left {
+      left: -50px;
+      bottom: -80px;
+    }
+  }
+
+/* General property card styles */
+
+/* General property card styling */
+.property-card {
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    width: 150%;
+    height: 150%;
+    max-width: 300px; /* Adjust to your desired card size */
+    margin-left: 100px;
+   margin-top: 40px;
+}
+
+/* New Launch label */
+.new-launch-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fdd835; /* Yellow background */
+    color: white;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 2; /* Make sure it's above the image */
+}
+
+/* Image container for holding both the image and location */
+.image-container {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Property image */
+.property-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Property location styling (overlay inside image) */
+.property-location {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #DC6B69;
+    /* Red background with transparency */
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+.property-location i {
+    margin-right: 5px;
+}
+
+/* Adjusting the layout for smaller screens */
+@media (max-width: 768px) {
+    .property-card {
+        max-width: 100%;
+    }
+}
+
+
+
+/* Circular Background Styling */
+.circle26-background {
+    position: absolute;
+    top: 10px;
+    right: -70px;
+    width: 400px;
+    height: 400px;
+    background-color: #D4787836;
+    border-radius: 50%;
+    z-index: -1;
+    overflow-x:  hidden;
+}
+/* Property image */ 
+.property26-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  
+
+    .property26-image {
+        margin-top: 30px; /* Reduce the margin for smaller screens */
+    }
+}
+
+
+@media (max-width: 576px) {
+    
+
+    .property26-image {
+        margin-top: 20px; /* Further reduce the margin for mobile screens */
+    }
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .property-card {
+        max-width: 100%;
+    }
+
+    .circle-background {
+        width: 250px;
+        height: 250px;
+        top: -10px;
+        left: -50px;
+    }
+
+    .property-logo {
+        width: 120px;
+    }
+
+    .icon-box {
+        font-size: 12px;
+    }
+
+    .icon-square {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-box p {
+        font-size: 0.8rem;
+    }
+
+    .btn-danger {
+        padding: 8px 15px;
+    }
+
+    .property-card-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .circle-background {
+        display: none; /* Hide the background circle on smaller screens for better view */
+    }
+
+    .property-card {
+        margin: 0 20px;
+    }
+
+    .btn-danger {
+        width: 100%;
+    }
+
+    .icon-box {
+        margin-bottom: 10px;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 992px) {
+    .property-card {
+        width: 350px;
+        height: auto;
+    }
+
+    .circle-background {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+
+
+/* Background styling */
+.community-section {
+    position: relative;
+    background-image: url('gallerythumb_3.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    color: white;
+}
+
+/* Transparent overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #490c0bb8;/* Black with transparency */
+    z-index: 1;
+}
+
+.community-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Left Section Styling */
+.community-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.community-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Icon Section Styling */
+.icon-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-box {
+    margin-bottom: 30px;
+}
+
+.circle-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: transparent; /* No background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 2px solid white; /* White border */
+}
+
+
+.circle-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.icon2-box p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .community-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .community-description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .icon-box p {
+        font-size: 0.9rem;
+    }
+
+    .circle-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .circle-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .community-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .community-description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .icon-section {
+        flex-direction: column; /* Stack the icons vertically on smaller screens */
+    }
+
+    .icon-box {
+        width: 100%;
+    }
+
+    .icon-box p {
+        font-size: 0.9rem;
+    }
+
+    .circle-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .circle-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .community-heading {
+        font-size: 1.5rem;
+    }
+
+    .community-description {
+        font-size: 0.9rem;
+    }
+
+    .circle-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .circle-icon img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+/* Section styling */
+.info-form-section {
+    background-image: url('liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper\ 1.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    position: relative;
+}
+
+/* Transparent overlay to ensure text is visible over the background */
+.info-form-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); /* Slight white transparency */
+    z-index: 1;
+}
+
+/* Ensure container content is above the overlay */
+.info-form-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Heading and paragraph styling */
+.info-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #CD1310; /* Red color */
+    line-height: 1.4;
+}
+
+.info-paragraph {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+/* Contact form card styling */
+.contact-form-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.form-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #050505;
+    text-align: center;
+}
+
+/* Input field styling */
+.contact-form .form-control {
+    border: none;
+    background-color: #fbdcdc; /* Light pink background */
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+}
+
+/* Submit button styling */
+.btn-submit {
+    background-color: #CD1310;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #a50e0c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .info-heading {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .info-paragraph {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .contact-form-card {
+        width: 100%;
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .form-heading {
+        font-size: 1.2rem;
+    }
+
+    .btn-submit {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-heading {
+        font-size: 1.2rem;
+    }
+
+    .info-paragraph {
+        font-size: 0.9rem;
+    }
+
+    .contact-form-card {
+        padding: 15px;
+    }
+
+    .form-heading {
+        font-size: 1rem;
+    }
+
+    .btn-submit {
+        padding: 7px;
+    }
+}
+
+
+
+
+/* Global Box Sizing to Avoid Overflow */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body overflow fix */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* General image card styling */
+/* Center and style the images */
+.owl-carousel .item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the slider card */
+/* Style the slider card */
+.slider-card {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Caption styling */
+.slider-caption {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    top: -50px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Highlight all the center items with zoom effect */
+.center-item img {
+    transform: scale(1.1); /* Zoom effect */
+    transition: all 0.3s ease;
+}
+
+.center-item {
+    z-index: 2; /* Ensure the center item is more prominent */
+}
+
+/* Custom navigation buttons */
+.custom-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.custom-prev, .custom-next {
+    border: 2px solid #cd1310;
+    background-color: transparent;
+    color: #cd1310;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.custom-prev:hover, .custom-next:hover {
+    background-color: #cd1310;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    /* For mobile screens, display only one item at a time */
+    .owl-carousel .item img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .slider-caption {
+        font-size: 16px;
+        top: -30px;
+    }
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .image-card img {
+        width: 100%; /* Keep images full width */
+        margin: 0 auto;
+    }
+
+    .overlay-text {
+        font-size: 0.9rem;
+        padding: 3px 8px; /* Adjust padding for smaller screens */
+    }
+
+    .circle-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .circle-arrow i {
+        font-size: 1.2rem;
+    }
+
+    .carousel-nav {
+        gap: 10px; /* Reduce gap between the arrows */
+    }
+
+    .owl-carousel {
+        margin: 0 auto; /* Center the carousel */
+    }
+}
+
+@media (max-width: 576px) {
+    .image-card img {
+        width: 100%; /* Full width on small screens */
+        margin: 0 auto;
+    }
+
+    .overlay-text {
+        font-size: 0.8rem;
+        padding: 3px 6px;
+    }
+
+    .circle-arrow {
+        width: 35px;
+        height: 35px;
+    }
+
+    .circle-arrow i {
+        font-size: 1rem;
+    }
+
+    .carousel-nav {
+        gap: 5px;
+    }
+
+    /* Remove potential horizontal scroll */
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    /* Fix for any wide element */
+    .container, .row, .col, .owl-carousel {
+        max-width: 100vw;
+        overflow: hidden;
+    }
+
+    .owl-carousel {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+.gallery-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #CD1310; /* Red color */
+    margin-bottom: 30px;
+}
+
+/* General gallery card styling */
+.gallery-card {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-card img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Larger middle image */
+.gallery-card-large {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-card-large img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-heading {
+        font-size: 1.5rem;
+    }
+
+    .gallery-card-large {
+        height: auto;
+    }
+}
+
+
+/* Section and Heading Styling */
+.testimonial-section {
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.testimonial-heading {
+    font-size: 2rem;
+    color: #CD1310; /* Red color */
+    margin-bottom: 20px;
+}
+
+/* Testimonial Navigation Styles */
+.testimonial-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.quote-icon {
+    font-size: 2.5rem;
+    color: #CD1310; /* Red color for the quote icon */
+    margin-right: 10px;
+}
+
+.horizontal-line {
+    flex-grow: 1;
+    border-bottom: 1px solid #CD1310; /* Red color for the line */
+    margin: 0 15px;
+}
+
+.arrow-container {
+    display: flex;
+    gap: 15px;
+}
+
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #CD1310;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #CD1310;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background-color: #CD1310;
+    color: white;
+}
+
+/* Video Section Styling */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 600px; /* Set a max-width to control the size */
+    border-radius: 10px;
+    border: 2px solid #CD1310;
+}
+
+
+/* Video wrapper container with red border and rounded corners */
+/* Video wrapper container with red border and rounded corners */
+.video-wrapper {
+    position: relative;
+    width: 560px; /* Set the desired width for desktop */
+    height: 315px; /* Set the desired height for desktop (16:9 ratio) */
+    max-width: 100%; /* Ensure it doesn't exceed screen size */
+    border: 2px solid #ff3b3b; /* Red border */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure iframe doesn't overflow the rounded corners */
+    margin: 0 auto; /* Center the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+}
+
+/* Responsive YouTube iframe */
+.video-iframe {
+    width: 100%; /* Ensure the iframe takes up full width of the container */
+    height: 100%; /* Ensure the height fits the container */
+    border-radius: 15px; /* Rounded corners for iframe */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .video-wrapper {
+        width: 100%; /* Full width on mobile */
+        height: 350px; /* Auto height to maintain aspect ratio */
+    }
+}
+
+/* p{
+    text-align: justify;
+} */
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .testimonial-navigation {
+        flex-direction: column;
+    }
+
+    .horizontal-line {
+        width: 60%;
+        margin: 10px 0;
+    }
+
+    .arrow-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .quote-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Section and Text Styling */
+.whats-next-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.whats-next-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.whats-next-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-request-callback, .btn-visit-website {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-request-callback {
+    background-color: #CD1310;
+    color: white;
+}
+
+.btn-visit-website {
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.btn-request-callback:hover {
+    background-color: #a50e0c;
+}
+
+.btn-visit-website:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Icon inside buttons */
+.btn i {
+    margin-left: 5px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-request-callback, .btn-visit-website {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+/* Footer Section */
+.footer-section {
+    background-color: #CD1310; /* Red background */
+    padding: 20px 0;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Footer Text and Links */
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    margin: 0;
+    display: inline;
+    font-size: 0.9rem;
+}
+
+.footer-link {
+    margin-right: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-section p {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .footer-link {
+        display: block;
+    }
+}
+
+
+
+
