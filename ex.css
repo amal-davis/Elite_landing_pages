@@ -15,7 +15,6 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    padding-left: 60px;
 }
 
 .elite-logo {
@@ -60,11 +59,7 @@ body {
     border-radius: 50%;
     z-index: -1; /* Place it behind the content */
 }
-@media (max-width: 576px) {
-    .circle-backgrounds {
-        display: none; /* Hide the circle on screens smaller than 576px */
-    }
-}
+
 .circle-backgrounde {
     position: absolute;
     top: -50px; /* Adjust to move the circle down or up */
@@ -79,6 +74,11 @@ body {
 /* Hide the circle in mobile view */
 @media (max-width: 576px) {
     .circle-backgrounde {
+        display: none; /* Hide the circle on screens smaller than 576px */
+    }
+}
+@media (max-width: 576px) {
+    .circle-backgrounds {
         display: none; /* Hide the circle on screens smaller than 576px */
     }
 }
@@ -126,7 +126,6 @@ body {
     .insigna-title {
         font-size: 10vw;
         margin-top: 40px;
-        margin-left: 20px;
     }
     .location {
         font-size: 3.5vw;
@@ -147,20 +146,16 @@ body {
     .insigna-title {
         font-size: 12vw;
         margin-top: 30px;
-        margin-left: 10px;
     }
     .location {
         font-size: 4vw;
-        margin-left: 10px;
     }
     .sample-btn {
         font-size: 4vw;
         padding: 8px 15px;
-        margin-right: 50px;
     }
     .subtitle {
         font-size: 4vw;
-        margin-left: 10px;
     }
 }
 
@@ -169,20 +164,16 @@ body {
     .insigna-title {
         font-size: 14vw;
         margin-top: 20px;
-        margin-left: 5px;
     }
     .location {
         font-size: 4.5vw;
-        margin-left: 5px;
     }
     .sample-btn {
         font-size: 4.5vw;
         padding: 5px 10px;
-        margin-right: 20px;
     }
     .subtitle {
         font-size: 4.5vw;
-        margin-left: 5px;
     }
 }
 .container-fluid {
@@ -352,7 +343,8 @@ body {
   @media (max-width: 600px) {
     .containers {
       height: 200px;
-      width: 350px; /* Set a fixed height for small screens */
+      width: 550px;
+        padding-right: 210px;
     }
     .circle {
       width: 200px;
@@ -365,6 +357,9 @@ body {
       transform: translateX(-29%);
     }
   }
+
+
+  
 
 
 /* Discount Badge */
@@ -409,7 +404,7 @@ body {
 
     .sample-btn {
         font-size: 2.5vw;
-        margin-right: 100px;
+        
     }
 
     .subtitle {

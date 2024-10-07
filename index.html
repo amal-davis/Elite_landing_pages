@@ -27,7 +27,79 @@
 
 
 </head>
+<style>
+  /* Container for fixed icons */
+.fixed-icons {
+    position: fixed;
+    bottom: 50px; /* Distance from the bottom of the page */
+    right: 20px; /* Distance from the right edge of the page */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between the two icons */
+    z-index: 999; /* Make sure the icons stay on top of other content */
+}
+.fixed-icons a{
+  text-decoration: none;
+}
+/* General icon styling */
+.fixed-icons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff; /* Background color */
+    border: 2px solid #000; /* Optional: border around the icon */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    text-align: center;
+    font-size: 24px;
+    color: #000; /* Icon color */
+    transition: all 0.3s ease;
+}
+
+/* WhatsApp specific styling */
+.whatsapp-icon {
+    color: #25D366 !important; /* WhatsApp green color */
+    border-color: #25D366 !important;
+}
+
+/* Hover effect */
+.fixed-icons .icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .fixed-icons {
+        bottom: 30px;
+        right: 10px;
+    }
+    .fixed-icons .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+a{
+  text-decoration: none;
+}
+
+</style>
 <body>
+  <div class="fixed-icons">
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/PHONE_NUMBER" target="_blank" class="icon whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Phone Icon -->
+    <a href="tel:PHONE_NUMBER" class="icon phone-icon">
+        <i class="fas fa-phone"></i>
+    </a>
+</div>
+
   <div class="container-fluid p-5 position-relative">
     <!-- Circle background in the bottom-left -->
 
@@ -39,23 +111,28 @@
                 <img src="elite_flag.png" alt="Elite Logo" class="elite-logo">
             </div>
             <br>
-            <h1 class="insigna-title">"INSIGNA"</h1>
-            <p class="location"><i class="fas fa-map-marker-alt"></i> Patturaikkal, Thrissur, Kerala</p>
-            <a href="#" class="btn sample-btn">Sample Apartment Ready <i class="ri-arrow-right-up-line"></i></a>
-            <p class="subtitle mt-3">Closer To Thrissur's Prominent <span><br></span> Places And Conveniences</p>
+            <div class="container">
+              <h1 class="insigna-title">"INSIGNA"</h1>
+              <p class="location"><i class="fas fa-map-marker-alt"></i> Patturaikkal, Thrissur, Kerala</p>
+              <a href="#" class="btn sample-btn">Sample Apartment Ready <i class="ri-arrow-right-up-line"></i></a>
+              <p class="subtitle mt-3">Closer To Thrissur's Prominent <span><br></span> Places And Conveniences</p>
+            </div>
+            
         </div>
 
         <!-- Image Section -->
         <div class="col-lg-6 position-relative">
           <div class="circle-backgrounde"></div>
             <div class="containers mt-5">
-                <div class="circle left-circle">
-                    <img src="gallerythumb_2.webp" alt="Left Image" class="img-fluid">
-                </div>
-                <div class="circle right-circle">
-                    <img src="gallerythumb_6.webp" alt="Right Image" class="img-fluid">
-                </div>
-            </div>
+              <div class="circle left-circle">
+                  <img src="gallerythumb_2.webp" alt="Left Image" class="img-fluid">
+              </div>
+              <div class="circle right-circle">
+                  <img src="gallerythumb_6.webp" alt="Right Image" class="img-fluid">
+              </div>
+          </div>
+          
+            
         </div>
     </div>
 </div>
@@ -319,9 +396,9 @@
                 </div>
           </div>
           
-          <div class="container mt-5 position-relative">
+          <div class="container mt-5 position-relative" >
               <!-- Circle Background at the Top Left -->
-              <div class="circle-top-left"></div>
+              <div class="circle-top-left"style="overflow: hidden;"></div>
               
               <!-- Property Section -->
               <div class="row" style="margin-top: 100px;">
@@ -406,7 +483,7 @@
               </div>
           
               <!-- Circle Background at the Bottom Right -->
-              <div class="circle-bottom-right"></div>
+              <div class="circle-bottom-right" style=" overflow-x: hidden"></div>
             </div>
           
             <!-- SECOND SECTION -->
@@ -491,7 +568,7 @@
             <!-- THIRD SECTION (New) -->
             <div class="container mt-5 position-relative">
               <!-- Circle Background on the Left Side for the Third Section -->
-              <div class="circle-left"></div>
+              <div class="circle-left" style="overflow: hidden;"></div>
               
               <!-- Property Section -->
               <div class="row" style="margin-top: 100px;">
